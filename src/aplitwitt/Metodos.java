@@ -35,14 +35,19 @@ public class Metodos {
     
     public static void conexion(){
         
+        
+//        
+//        cb = new ConfigurationBuilder();
+//        cb.setDebugEnabled(true);
+//        cb.setOAuthConsumerKey("HM2EWw6abBIbfqcyi8CGL9CRW");
+//        cb.setOAuthConsumerSecret("KhekAUCcCGZ6Me4dRtoDp5faeqiEw34z9bvDT2lAN1lmbdHU6s");
+//        cb.setOAuthAccessToken("2987504416-JR7fYucp8VuUEkuH9DiloAK9jqnfyWuI3ZRG0dl");
+//        cb.setOAuthAccessTokenSecret("LhrTvDfdvSjeh3nygEo2BYmi2a3UtoxyDacIOwIK4r8Zz");
         cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true);
-        cb.setOAuthConsumerKey("HM2EWw6abBIbfqcyi8CGL9CRW");
-        cb.setOAuthConsumerSecret("KhekAUCcCGZ6Me4dRtoDp5faeqiEw34z9bvDT2lAN1lmbdHU6s");
-        cb.setOAuthAccessToken("2987504416-JR7fYucp8VuUEkuH9DiloAK9jqnfyWuI3ZRG0dl");
-        cb.setOAuthAccessTokenSecret("LhrTvDfdvSjeh3nygEo2BYmi2a3UtoxyDacIOwIK4r8Zz");
         TwitterFactory tf = new TwitterFactory(cb.build());
         twitter = tf.getInstance();
+
     }
 
     public static void lineaTiempo() {
